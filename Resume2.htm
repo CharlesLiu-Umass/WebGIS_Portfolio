@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Charles Liu Resume</title>
+    <style>
+        text {
+            font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+            font-size: 15px;
+            fill: black
+        }
+
+        .header {
+            font-size: 45px;
+            fill: white;
+        }
+        .header-text {
+            font-size: 15px;
+            fill: white;
+        }
+
+        .body-header {
+            font-size: 30px;
+            fill: black
+        }
+        .contact-link {
+            font-size: 20px;
+            fill: blue
+        }
+        .contact {
+            font-size: 20px;
+            fill: black
+        }
+        .contact-header {
+            font-size: 35px;
+            fill: black
+        }
+        .paragraph{
+            font-size: 16px;
+            fill: black;
+        }
+        .paragraph-highlight {
+            font-size: 23px;
+            fill: black
+        }
+        .bullit {
+            font-size: 30px;
+            fill: black
+        }
+    </style>
+</head>
+<body>
+
+    <svg width="1500" height="1200">
+        <!--SVG bounding box-->
+        <rect x="0" y="0" width="1500" height="1200" fill= 'white'/>
+        <!--Resume borders-->
+        <line x1="350" y1="0" x2="350" y2="1200" stroke="grey" stroke-width="1" />
+        <line x1="1150" y1="0" x2="1150" y2="1200" stroke="grey" stroke-width="1" />
+        <line x1="350" y1="1200" x2="1150" y2="1200" stroke="grey" stroke-width="1" />
+        <rect x="0" y="0" width="350" height="1200" fill= '#fff3f5'/>
+        <rect x="1150" y="0" width="350" height="1200" fill= '#fff3f5'/>
+        <!--Left Column-->
+        <rect x="350" y="150" width="250" height="1050" fill= "#e5e6e5"/>
+            <!--Contacts-->
+            <text class = 'contact-header' x="363" y="260">Contact Details</text>
+                <a href="mailto:charlesliu352@gmail.com" target="_blank">
+                    <text class = 'contact-link' x="370" y="325">charlesliu352@gmail.com</text>
+                    <line x1="370" y1="327" x2="579" y2="327" stroke="blue" stroke-width="1"></line></a>
+                <text class = 'contact' x="410" y="375">(339) 215 9001</text>         
+                <text class = 'contact' x="403" y="425">8 Cider Mill Lane,</text>         
+                    <text class = 'contact' x="390" y="445">Lexington, MA 02421</text>         
+                <a href="https://www.linkedin.com/in/charles-liu-618630220/" target="_blank">
+                    <text class = 'contact-link' x="440" y="499">LinkedIn</text>
+                    <line x1="440" y1="501" x2="509" y2="501" stroke="blue" stroke-width="1"></line></a>
+            <!--Skills-->
+            <text class="contact-header" x="440 " y="625">Skills</text>
+                <text class = 'contact' x="408" y="690">ArcGIS - Proficient</text>
+                <text class = 'contact' x="410" y="740">Python - Expert</text>
+                <text class = 'contact' x="396" y="790">PostSQL - Proficient</text>
+                <text class = 'contact' x="383" y="840">Java Script - Proficient</text>
+                <text class = 'contact' x="434" y="890">CSS - Proficient</text>
+                <text class = 'contact' x="414" y="940">HTML - Proficient</text>
+                <text class = 'contact' x="436" y="990">Java - Proficient</text>
+                <text class = 'contact' x="387" y="1040">MS Office - Expert</text>
+        <!--Header-->
+            <!--Header Background-->
+            <rect x="350" y="0" width="800" height="150" fill= '#044821'/>
+            <polygon points="350,149 475,200, 600,149" fill="#044821" stroke="#044821" stroke-width="2"/>
+            <!--Header Text-->
+            <text class = 'header' x="640" y="70">Charles Liu</text>
+            <text class = 'header-text' x="643" y="110">Environmental and Computer Science Student</text>
+            <!--Header Photo-->
+            <defs>
+                <clipPath id="circleClip">
+                <circle cx="475" cy="90" r="70" />
+                </clipPath>
+            </defs>
+            <image href="Picture.jfif" x=400 y="10" width="150" height="150" clip-path="url(#circleClip)"></image>
+        <!--Main Body-->
+            <text class = 'body-header' x="640" y="200">Summary </text>
+                <line x1="640" y1="220" x2="1100" y2="220" stroke="black" stroke-width="1"> </line>
+                <text x="640" y="250" font-size="16" fill="black">
+                    <tspan x="640" dy="0">Senior with successful college career who has an analytical mind, strong</tspan>
+                    <tspan x="640" dy="20">problem-solving and time management skills with solid foundation in computer </tspan>
+                    <tspan x="640" dy="20">science and environmental science topics. Now looking to grow programming</tspan>
+                    <tspan x="640" dy="20">skills in real-world work environment, especially in application to data</tspan>
+                    <tspan x="640" dy="20">science.</tspan>
+                </text>
+            <text class = 'body-header' x="640" y="400">Education </text>
+                <line x1="640" y1="420" x2="1100" y2="420" stroke="black" stroke-width="1"> </line>
+                <text class="paragraph-highlight" x="640" y="450">University of Massachusetts Amherst </text>
+                    <text x="965" y="400">Sept. 2021 - May 2025</text>
+                    <text x='640' y="470">Bachelor of Science in Environmental Science</text>
+                    <text x='640' y="490">Bachelor of Arts in Computer Science</text>
+                    <text x='640' y="510">GPA: 3.876; Dean’s List all Semesters</text>
+                <text class="paragraph-highlight" x='640' y="550">Relevant Coursework:</text>
+                    <text x='640' y="570">Machine Learning, Introduction to Algorithms,</text>
+                    <text x='640' y="590">Pract. & Appl of Data Management, Decarbonization in Data Science,</text>
+                    <text x='640' y="610">GIS Programming, Geocomputation</text>
+            <text class = 'body-header' x="640" y="680">Work Experience </text>
+                <line x1="640" y1="700" x2="1100" y2="700" stroke="black" stroke-width="1"> </line>
+                <text x="975" y="680">Feb. 2024 to Present</text>
+                <text class="paragraph-highlight" x="640" y="730">Student Researcher</text>
+                    <text class="bullit" x="670" y="760">•</text>
+                        <text x="700" y="755">Gathered and analyzed geo-web data to characterize water</text>
+                            <text x="700" y="775">sub-basins across Budyko Curve</text>
+                    <text class="bullit" x="670" y="800">•</text>                    
+                        <text x="700" y="795">Created GIS weblayers as visual aid for solar project</text>
+                    <text class="bullit" x="670" y="820">•</text>                                        
+                        <text x="700" y="815">Utilized models such as SARIMAX and neural networks to predict</text>
+                        <text x="700" y="835">and describe river discharge data</text>
+            <text class = 'body-header' x="640" y="890">Accompishments </text>
+                <line x1="640" y1="910" x2="1100" y2="910" stroke="black" stroke-width="1"> </line>
+                <text class="paragraph-highlight" x="640" y="940">Various Coding Mini Projects </text>
+                    <text class="bullit" x="670" y="970">•</text>
+                        <text x="700" y="965">Coded neural network from scratch</text>
+                    <text class="bullit" x="670" y="990">•</text>
+                        <text x="700" y="985">Created plant selection remediation tool with ArcGIS</text>
+                    <text class="bullit" x="670" y="1010">•</text>
+                        <text x="700" y="1005">Trained time series model to predict river discharge</text>
+                <text class="paragraph-highlight" x="640" y="1045">Phage discovery </text>                       
+                    <text x="960" y="1045">Sep. 2022 to Dec. 2022</text>
+                    <text class="bullit" x="670" y="1075">•</text>
+                        <text x="700" y="1070">Isolated, purified, characterized and added phage, FineasAndFrage,</text>
+                        <text x="700" y="1090">to the phage database</text>
+                    <text class="bullit" x="670" y="1110">•</text>
+                        <text x="700" y="1110">Collaborated with lab group to present  methods and findings to</text>
+                        <text x="700" y="1130">other researchers</text>
+                    <text class="bullit" x="670" y="1150">•</text>
+                        <text x="700" y="1150">Utilized pipettes, filters, agar plates, microscope and nanodrop</text>
+                        <text x="700" y="1170">spectrophotometer </text>      
+    </svg>
+</body>
+</html>
