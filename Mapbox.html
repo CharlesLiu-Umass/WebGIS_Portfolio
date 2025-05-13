@@ -202,6 +202,27 @@
                 wrapper.appendChild(label);
                 legend.appendChild(wrapper);
             }
+            // Get reference to the div
+            const back_home = document.createElement('div');
+            back_home.style.position = 'absolute';
+            back_home.style.bottom = '40px';
+            back_home.style.left = '20px';
+            back_home.style.background = 'white';
+            back_home.style.padding = '10px';
+            back_home.style.fontSize = '12px';
+            back_home.style.borderRadius = '4px';
+            back_home.style.boxShadow = '0 0 5px rgba(0,0,0,0.3)';
+            back_home.style.zIndex = '1000';
+            back_home.style.width = '160px';
+            back_home.style.textAlign = 'center';
+            document.getElementById('map').appendChild(back_home);
+            // Create the <a> element
+            const link = document.createElement('a');
+            link.href = 'index.html';     // Set the URL
+            link.textContent = 'Back Home';       // Set the link text
+
+            // Append the link to the div
+            back_home.appendChild(link);
         </script>
     </body>
 </html>
